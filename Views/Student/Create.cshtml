@@ -1,0 +1,59 @@
+﻿@model RepositoryPattern.ViewModels.StudentCreateViewModel
+@{ 
+    ViewBag.title = "Create page";
+}
+<form enctype="multipart/form-data" asp-controller="Student" asp-action="Create" method="post" class="mt-3">
+    <div class="form-group row">
+        <label asp-for="Firstname" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Firstname" class="form-control" placeholder="Enter Your Name" />
+            <span asp-validation-for="Firstname" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Lastname" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Lastname" class="form-control" placeholder="Enter Your Email" />
+            <span asp-validation-for="Lastname" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Email" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Email" class="form-control" placeholder="Enter Your Name" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="Age" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="Age" class="form-control" placeholder="Enter Your Email" />
+            <span asp-validation-for="Age" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="CountryName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="CountryName" class="form-control" placeholder="Enter Your Name" />
+            <span asp-validation-for="CountryName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="StateName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="StateName" class="form-control" placeholder="Enter Your Email" />
+            <span asp-validation-for="StateName" class="text-danger"></span>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label asp-for="CityName" class="col-sm-2 col-form-label"></label>
+        <div class="col-sm-10">
+            <input asp-for="CityName" class="form-control" placeholder="Enter Your Email" />
+            <span asp-validation-for="CityName" class="text-danger"></span>
+        </div>
+    </div>
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <div>
+        <button type="submit" class=" btn btn-primary ">Create</button>
+    </div>
+</form>
